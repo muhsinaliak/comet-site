@@ -1,0 +1,909 @@
+{
+  "products": [
+    {
+      "id": "prod_001",
+      "slug": "smart-damper-actuator-sd100",
+      "sku": "CC-SD-100",
+      "category": "hvac",
+      "subcategory": "damper-actuators",
+      "featured": true,
+      "name": {
+        "tr": "Akıllı Damper Aktüatörü SD100",
+        "en": "Smart Damper Actuator SD100"
+      },
+      "shortDescription": {
+        "tr": "Yüksek performanslı IoT özellikli damper aktüatörü. 24V AC/DC, 10Nm tork, BACnet/Modbus iletişim.",
+        "en": "High-performance IoT-enabled damper actuator. 24V AC/DC, 10Nm torque, BACnet/Modbus communication."
+      },
+      "longDescription": {
+        "tr": "SD100 Akıllı Damper Aktüatörü, HVAC sistemlerinde hava akış kontrolü için tasarlanmış üst düzey bir kontrol cihazıdır. Dahili IoT sensörleri sayesinde gerçek zamanlı izleme ve uzaktan yönetim imkanı sunar. BACnet ve Modbus protokolleri ile mevcut BMS sistemlerinize sorunsuz entegre olur.",
+        "en": "The SD100 Smart Damper Actuator is a premium control device designed for airflow control in HVAC systems. With built-in IoT sensors, it offers real-time monitoring and remote management capabilities. It integrates seamlessly with existing BMS systems through BACnet and Modbus protocols."
+      },
+      "images": [
+        {
+          "src": "/images/products/sd100-front.webp",
+          "alt": {
+            "tr": "SD100 ön görünüm",
+            "en": "SD100 front view"
+          }
+        },
+        {
+          "src": "/images/products/sd100-side.webp",
+          "alt": {
+            "tr": "SD100 yan görünüm",
+            "en": "SD100 side view"
+          }
+        }
+      ],
+      "model3d": {
+        "glb": "/models/sd100.glb",
+        "poster": "/images/products/sd100-front.webp"
+      },
+      "specifications": [
+        {
+          "group": {
+            "tr": "Elektrik Özellikleri",
+            "en": "Electrical Properties"
+          },
+          "items": [
+            {
+              "label": {
+                "tr": "Çalışma Voltajı",
+                "en": "Operating Voltage"
+              },
+              "value": "24",
+              "unit": "V AC/DC"
+            },
+            {
+              "label": {
+                "tr": "Güç Tüketimi",
+                "en": "Power Consumption"
+              },
+              "value": "5",
+              "unit": "W"
+            },
+            {
+              "label": {
+                "tr": "İletişim Protokolü",
+                "en": "Communication Protocol"
+              },
+              "value": "BACnet / Modbus RTU",
+              "unit": ""
+            }
+          ]
+        },
+        {
+          "group": {
+            "tr": "Mekanik Özellikler",
+            "en": "Mechanical Properties"
+          },
+          "items": [
+            {
+              "label": {
+                "tr": "Tork",
+                "en": "Torque"
+              },
+              "value": "10",
+              "unit": "Nm"
+            },
+            {
+              "label": {
+                "tr": "Çalışma Açısı",
+                "en": "Operating Angle"
+              },
+              "value": "0-90",
+              "unit": "°"
+            },
+            {
+              "label": {
+                "tr": "Çalışma Süresi",
+                "en": "Running Time"
+              },
+              "value": "90",
+              "unit": "s"
+            }
+          ]
+        },
+        {
+          "group": {
+            "tr": "Çevre Koşulları",
+            "en": "Environmental Conditions"
+          },
+          "items": [
+            {
+              "label": {
+                "tr": "Çalışma Sıcaklığı",
+                "en": "Operating Temperature"
+              },
+              "value": "-20...+50",
+              "unit": "°C"
+            },
+            {
+              "label": {
+                "tr": "Koruma Sınıfı",
+                "en": "Protection Class"
+              },
+              "value": "IP54",
+              "unit": ""
+            }
+          ]
+        }
+      ],
+      "documents": [
+        {
+          "type": "datasheet",
+          "title": {
+            "tr": "Teknik Veri Sayfası",
+            "en": "Technical Datasheet"
+          },
+          "file": "/documents/sd100-datasheet.pdf",
+          "fileSize": "2.4 MB",
+          "language": "tr/en"
+        },
+        {
+          "type": "installation-guide",
+          "title": {
+            "tr": "Montaj Kılavuzu",
+            "en": "Installation Guide"
+          },
+          "file": "/documents/sd100-install-guide.pdf",
+          "fileSize": "1.1 MB",
+          "language": "tr"
+        },
+        {
+          "type": "certificate",
+          "title": {
+            "tr": "CE Sertifikası",
+            "en": "CE Certificate"
+          },
+          "file": "/documents/sd100-ce-cert.pdf",
+          "fileSize": "450 KB",
+          "language": "en"
+        }
+      ],
+      "software": [
+        {
+          "name": "Comet Config Tool",
+          "version": "1.2.0",
+          "description": {
+            "tr": "SD100 yapılandırma ve izleme yazılımı",
+            "en": "SD100 configuration and monitoring software"
+          },
+          "file": "/software/comet-config-tool-v1.2.zip",
+          "fileSize": "15.3 MB",
+          "platform": "Windows",
+          "releaseDate": "2025-06-15"
+        }
+      ],
+      "accessories": [
+        {
+          "productId": "prod_004",
+          "relationship": "compatible"
+        }
+      ],
+      "videos": [
+        {
+          "title": {
+            "tr": "SD100 Tanıtım Videosu",
+            "en": "SD100 Introduction Video"
+          },
+          "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "thumbnail": "/images/products/sd100-video-thumb.webp",
+          "duration": "3:45"
+        }
+      ],
+      "tags": [
+        "iot",
+        "smart",
+        "damper",
+        "actuator",
+        "hvac",
+        "bacnet",
+        "modbus"
+      ],
+      "status": "active",
+      "price": {
+        "amount": 4250,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "prod_002",
+      "slug": "room-sensor-rs200",
+      "sku": "CC-RS-200",
+      "category": "hvac",
+      "subcategory": "room-sensors",
+      "featured": true,
+      "name": {
+        "tr": "Oda Sensörü RS200",
+        "en": "Room Sensor RS200"
+      },
+      "shortDescription": {
+        "tr": "Sıcaklık, nem ve CO2 ölçümü yapan akıllı oda sensörü. ePaper ekran, NFC konfigürasyon.",
+        "en": "Smart room sensor with temperature, humidity and CO2 measurement. ePaper display, NFC configuration."
+      },
+      "longDescription": {
+        "tr": "RS200 Oda Sensörü, iç mekan klima kontrolü için kapsamlı çevresel veri sağlar. ePaper dokunmatik ekranı sayesinde kullanıcılar sıcaklık, nem ve hava kalitesi değerlerini anlık olarak görebilir. NFC ile hızlı konfigürasyon ve MP-Bus/Modbus iletişim desteği sunar.",
+        "en": "The RS200 Room Sensor provides comprehensive environmental data for indoor climate control. With its ePaper touchscreen display, users can instantly view temperature, humidity and air quality values. It offers quick NFC configuration and MP-Bus/Modbus communication support."
+      },
+      "images": [
+        {
+          "src": "/images/products/rs200-front.webp",
+          "alt": {
+            "tr": "RS200 ön görünüm",
+            "en": "RS200 front view"
+          }
+        }
+      ],
+      "model3d": {
+        "glb": "/models/rs200.glb",
+        "poster": "/images/products/rs200-front.webp"
+      },
+      "specifications": [
+        {
+          "group": {
+            "tr": "Ölçüm Özellikleri",
+            "en": "Measurement Properties"
+          },
+          "items": [
+            {
+              "label": {
+                "tr": "Sıcaklık Aralığı",
+                "en": "Temperature Range"
+              },
+              "value": "0...+50",
+              "unit": "°C"
+            },
+            {
+              "label": {
+                "tr": "Nem Aralığı",
+                "en": "Humidity Range"
+              },
+              "value": "0...95",
+              "unit": "% RH"
+            },
+            {
+              "label": {
+                "tr": "CO2 Ölçüm Aralığı",
+                "en": "CO2 Measurement Range"
+              },
+              "value": "0...5000",
+              "unit": "ppm"
+            },
+            {
+              "label": {
+                "tr": "Sıcaklık Hassasiyeti",
+                "en": "Temperature Accuracy"
+              },
+              "value": "±0.3",
+              "unit": "°C"
+            }
+          ]
+        },
+        {
+          "group": {
+            "tr": "Elektrik Özellikleri",
+            "en": "Electrical Properties"
+          },
+          "items": [
+            {
+              "label": {
+                "tr": "Besleme Voltajı",
+                "en": "Supply Voltage"
+              },
+              "value": "24",
+              "unit": "V AC/DC"
+            },
+            {
+              "label": {
+                "tr": "Çıkış Sinyali",
+                "en": "Output Signal"
+              },
+              "value": "0-10V / 4-20mA",
+              "unit": ""
+            },
+            {
+              "label": {
+                "tr": "İletişim",
+                "en": "Communication"
+              },
+              "value": "MP-Bus / Modbus / NFC",
+              "unit": ""
+            }
+          ]
+        }
+      ],
+      "documents": [
+        {
+          "type": "datasheet",
+          "title": {
+            "tr": "Teknik Veri Sayfası",
+            "en": "Technical Datasheet"
+          },
+          "file": "/documents/rs200-datasheet.pdf",
+          "fileSize": "1.8 MB",
+          "language": "tr/en"
+        },
+        {
+          "type": "manual",
+          "title": {
+            "tr": "Kullanım Kılavuzu",
+            "en": "User Manual"
+          },
+          "file": "/documents/rs200-manual.pdf",
+          "fileSize": "3.2 MB",
+          "language": "tr"
+        }
+      ],
+      "software": [
+        {
+          "name": "Comet Sensor Studio",
+          "version": "2.0.1",
+          "description": {
+            "tr": "Sensör konfigürasyon ve kalibrasyon yazılımı",
+            "en": "Sensor configuration and calibration software"
+          },
+          "file": "/software/comet-sensor-studio-v2.0.zip",
+          "fileSize": "22.1 MB",
+          "platform": "Windows",
+          "releaseDate": "2025-08-20"
+        }
+      ],
+      "accessories": [],
+      "videos": [],
+      "tags": [
+        "sensor",
+        "room",
+        "temperature",
+        "humidity",
+        "co2",
+        "epaper",
+        "nfc"
+      ],
+      "status": "active",
+      "price": {
+        "amount": 1850,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "prod_003",
+      "slug": "iot-gateway-gw500",
+      "sku": "CC-GW-500",
+      "category": "industrial-iot",
+      "subcategory": "gateways",
+      "featured": true,
+      "name": {
+        "tr": "IoT Gateway GW500",
+        "en": "IoT Gateway GW500"
+      },
+      "shortDescription": {
+        "tr": "Endüstriyel IoT gateway. BACnet/Modbus'tan MQTT/REST API'ye protokol dönüştürme. Edge computing.",
+        "en": "Industrial IoT gateway. Protocol conversion from BACnet/Modbus to MQTT/REST API. Edge computing."
+      },
+      "longDescription": {
+        "tr": "GW500 IoT Gateway, saha cihazlarınızı bulut platformlarına bağlayan güçlü bir endüstriyel ağ geçididir. BACnet, Modbus, KNX gibi geleneksel protokolleri MQTT ve REST API'ye dönüştürerek, mevcut altyapınızı IoT ekosistemine sorunsuz entegre eder. Dahili edge computing yetenekleri ile yerel veri işleme ve karar verme imkanı sunar.",
+        "en": "The GW500 IoT Gateway is a powerful industrial gateway that connects your field devices to cloud platforms. It converts traditional protocols such as BACnet, Modbus, and KNX to MQTT and REST API, seamlessly integrating your existing infrastructure into the IoT ecosystem. With built-in edge computing capabilities, it enables local data processing and decision-making."
+      },
+      "images": [
+        {
+          "src": "/images/products/gw500-front.webp",
+          "alt": {
+            "tr": "GW500 ön görünüm",
+            "en": "GW500 front view"
+          }
+        }
+      ],
+      "model3d": {
+        "glb": "/models/gw500.glb",
+        "poster": "/images/products/gw500-front.webp"
+      },
+      "specifications": [
+        {
+          "group": {
+            "tr": "İletişim",
+            "en": "Communication"
+          },
+          "items": [
+            {
+              "label": {
+                "tr": "Saha Protokolleri",
+                "en": "Field Protocols"
+              },
+              "value": "BACnet IP/MSTP, Modbus TCP/RTU, KNX",
+              "unit": ""
+            },
+            {
+              "label": {
+                "tr": "Bulut Protokolleri",
+                "en": "Cloud Protocols"
+              },
+              "value": "MQTT, REST API, WebSocket",
+              "unit": ""
+            },
+            {
+              "label": {
+                "tr": "Ethernet Portları",
+                "en": "Ethernet Ports"
+              },
+              "value": "2x Gigabit",
+              "unit": ""
+            },
+            {
+              "label": {
+                "tr": "Kablosuz",
+                "en": "Wireless"
+              },
+              "value": "Wi-Fi 6 / BLE 5.0",
+              "unit": ""
+            }
+          ]
+        },
+        {
+          "group": {
+            "tr": "Donanım",
+            "en": "Hardware"
+          },
+          "items": [
+            {
+              "label": {
+                "tr": "İşlemci",
+                "en": "Processor"
+              },
+              "value": "ARM Cortex-A72 Quad-Core 1.5GHz",
+              "unit": ""
+            },
+            {
+              "label": {
+                "tr": "RAM",
+                "en": "RAM"
+              },
+              "value": "4",
+              "unit": "GB"
+            },
+            {
+              "label": {
+                "tr": "Depolama",
+                "en": "Storage"
+              },
+              "value": "32",
+              "unit": "GB eMMC"
+            },
+            {
+              "label": {
+                "tr": "Besleme",
+                "en": "Power Supply"
+              },
+              "value": "24V DC / PoE",
+              "unit": ""
+            }
+          ]
+        },
+        {
+          "group": {
+            "tr": "Çevre Koşulları",
+            "en": "Environmental Conditions"
+          },
+          "items": [
+            {
+              "label": {
+                "tr": "Çalışma Sıcaklığı",
+                "en": "Operating Temperature"
+              },
+              "value": "-20...+60",
+              "unit": "°C"
+            },
+            {
+              "label": {
+                "tr": "Koruma Sınıfı",
+                "en": "Protection Class"
+              },
+              "value": "IP65",
+              "unit": ""
+            },
+            {
+              "label": {
+                "tr": "DIN Ray Montaj",
+                "en": "DIN Rail Mount"
+              },
+              "value": "Evet / Yes",
+              "unit": ""
+            }
+          ]
+        }
+      ],
+      "documents": [
+        {
+          "type": "datasheet",
+          "title": {
+            "tr": "Teknik Veri Sayfası",
+            "en": "Technical Datasheet"
+          },
+          "file": "/documents/gw500-datasheet.pdf",
+          "fileSize": "3.5 MB",
+          "language": "tr/en"
+        },
+        {
+          "type": "installation-guide",
+          "title": {
+            "tr": "Hızlı Başlangıç Kılavuzu",
+            "en": "Quick Start Guide"
+          },
+          "file": "/documents/gw500-quickstart.pdf",
+          "fileSize": "2.1 MB",
+          "language": "tr/en"
+        }
+      ],
+      "software": [
+        {
+          "name": "Comet Gateway Manager",
+          "version": "3.1.0",
+          "description": {
+            "tr": "Gateway konfigürasyon ve yönetim yazılımı",
+            "en": "Gateway configuration and management software"
+          },
+          "file": "/software/comet-gateway-manager-v3.1.zip",
+          "fileSize": "45.6 MB",
+          "platform": "Cross-platform",
+          "releaseDate": "2025-09-01"
+        }
+      ],
+      "accessories": [
+        {
+          "productId": "prod_004",
+          "relationship": "recommended"
+        }
+      ],
+      "videos": [
+        {
+          "title": {
+            "tr": "GW500 Kurulum Rehberi",
+            "en": "GW500 Setup Guide"
+          },
+          "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "thumbnail": "/images/products/gw500-video-thumb.webp",
+          "duration": "8:12"
+        }
+      ],
+      "tags": [
+        "gateway",
+        "iot",
+        "mqtt",
+        "bacnet",
+        "modbus",
+        "edge",
+        "cloud"
+      ],
+      "status": "active",
+      "price": {
+        "amount": 6900,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "prod_004",
+      "slug": "din-rail-power-supply-ps24",
+      "sku": "CC-PS-24",
+      "category": "accessories",
+      "subcategory": "power-supplies",
+      "featured": false,
+      "name": {
+        "tr": "DIN Ray Güç Kaynağı PS24",
+        "en": "DIN Rail Power Supply PS24"
+      },
+      "shortDescription": {
+        "tr": "24V DC / 2.5A endüstriyel güç kaynağı. DIN ray montaj, aşırı yük koruması.",
+        "en": "24V DC / 2.5A industrial power supply. DIN rail mount, overload protection."
+      },
+      "longDescription": {
+        "tr": "PS24 DIN Ray Güç Kaynağı, Comet Control ürün ailesi ve diğer endüstriyel cihazlar için güvenilir 24V DC besleme sağlar. Kompakt tasarımı ve DIN ray montajı ile pano içi kurulumu kolaydır. Aşırı yük, kısa devre ve aşırı sıcaklık koruması ile güvenli çalışma sağlar.",
+        "en": "The PS24 DIN Rail Power Supply provides reliable 24V DC power for the Comet Control product family and other industrial devices. Its compact design and DIN rail mounting makes panel installation easy. It ensures safe operation with overload, short circuit and overtemperature protection."
+      },
+      "images": [
+        {
+          "src": "/images/products/ps24-front.webp",
+          "alt": {
+            "tr": "PS24 ön görünüm",
+            "en": "PS24 front view"
+          }
+        }
+      ],
+      "model3d": null,
+      "specifications": [
+        {
+          "group": {
+            "tr": "Elektrik Özellikleri",
+            "en": "Electrical Properties"
+          },
+          "items": [
+            {
+              "label": {
+                "tr": "Giriş Voltajı",
+                "en": "Input Voltage"
+              },
+              "value": "100-240",
+              "unit": "V AC"
+            },
+            {
+              "label": {
+                "tr": "Çıkış Voltajı",
+                "en": "Output Voltage"
+              },
+              "value": "24",
+              "unit": "V DC"
+            },
+            {
+              "label": {
+                "tr": "Çıkış Akımı",
+                "en": "Output Current"
+              },
+              "value": "2.5",
+              "unit": "A"
+            },
+            {
+              "label": {
+                "tr": "Çıkış Gücü",
+                "en": "Output Power"
+              },
+              "value": "60",
+              "unit": "W"
+            },
+            {
+              "label": {
+                "tr": "Verimlilik",
+                "en": "Efficiency"
+              },
+              "value": ">90",
+              "unit": "%"
+            }
+          ]
+        }
+      ],
+      "documents": [
+        {
+          "type": "datasheet",
+          "title": {
+            "tr": "Teknik Veri Sayfası",
+            "en": "Technical Datasheet"
+          },
+          "file": "/documents/ps24-datasheet.pdf",
+          "fileSize": "890 KB",
+          "language": "tr/en"
+        }
+      ],
+      "software": [],
+      "accessories": [],
+      "videos": [],
+      "tags": [
+        "power",
+        "supply",
+        "din",
+        "rail",
+        "24v"
+      ],
+      "status": "active",
+      "price": {
+        "amount": 320,
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "prod_005",
+      "slug": "building-controller-bc300",
+      "sku": "CC-BC-300",
+      "category": "building-automation",
+      "subcategory": "controllers",
+      "featured": true,
+      "name": {
+        "tr": "Bina Kontrolörü BC300",
+        "en": "Building Controller BC300"
+      },
+      "shortDescription": {
+        "tr": "Programlanabilir bina otomasyon kontrolörü. Web tabanlı arayüz, BACnet/IP, 32 I/O noktası.",
+        "en": "Programmable building automation controller. Web-based interface, BACnet/IP, 32 I/O points."
+      },
+      "longDescription": {
+        "tr": "BC300 Bina Kontrolörü, orta ve büyük ölçekli binalarda HVAC, aydınlatma ve erişim kontrol sistemlerinin merkezi yönetimi için tasarlanmış gelişmiş bir otomasyon kontrolörüdür. Web tabanlı konfigürasyon arayüzü ile programlama ve izleme kolaylığı sağlar. 32 I/O noktası ile geniş kapsamlı kontrol imkanı sunar.",
+        "en": "The BC300 Building Controller is an advanced automation controller designed for central management of HVAC, lighting and access control systems in medium and large buildings. It provides ease of programming and monitoring with its web-based configuration interface. With 32 I/O points, it offers comprehensive control capability."
+      },
+      "images": [
+        {
+          "src": "/images/products/bc300-front.webp",
+          "alt": {
+            "tr": "BC300 ön görünüm",
+            "en": "BC300 front view"
+          }
+        }
+      ],
+      "model3d": {
+        "glb": "/models/bc300.glb",
+        "poster": "/images/products/bc300-front.webp"
+      },
+      "specifications": [
+        {
+          "group": {
+            "tr": "I/O Özellikleri",
+            "en": "I/O Properties"
+          },
+          "items": [
+            {
+              "label": {
+                "tr": "Dijital Giriş",
+                "en": "Digital Input"
+              },
+              "value": "16",
+              "unit": "adet/pcs"
+            },
+            {
+              "label": {
+                "tr": "Analog Giriş",
+                "en": "Analog Input"
+              },
+              "value": "8",
+              "unit": "adet/pcs"
+            },
+            {
+              "label": {
+                "tr": "Dijital Çıkış",
+                "en": "Digital Output"
+              },
+              "value": "8",
+              "unit": "adet/pcs"
+            },
+            {
+              "label": {
+                "tr": "Genişleme",
+                "en": "Expansion"
+              },
+              "value": "128 I/O (modüler)",
+              "unit": ""
+            }
+          ]
+        },
+        {
+          "group": {
+            "tr": "İletişim",
+            "en": "Communication"
+          },
+          "items": [
+            {
+              "label": {
+                "tr": "Protokoller",
+                "en": "Protocols"
+              },
+              "value": "BACnet/IP, Modbus TCP/RTU, KNX",
+              "unit": ""
+            },
+            {
+              "label": {
+                "tr": "Web Arayüzü",
+                "en": "Web Interface"
+              },
+              "value": "HTML5, HTTPS",
+              "unit": ""
+            },
+            {
+              "label": {
+                "tr": "Ethernet",
+                "en": "Ethernet"
+              },
+              "value": "2x 10/100 Mbps",
+              "unit": ""
+            }
+          ]
+        }
+      ],
+      "documents": [
+        {
+          "type": "datasheet",
+          "title": {
+            "tr": "Teknik Veri Sayfası",
+            "en": "Technical Datasheet"
+          },
+          "file": "/documents/bc300-datasheet.pdf",
+          "fileSize": "4.2 MB",
+          "language": "tr/en"
+        },
+        {
+          "type": "manual",
+          "title": {
+            "tr": "Programlama Kılavuzu",
+            "en": "Programming Guide"
+          },
+          "file": "/documents/bc300-programming-guide.pdf",
+          "fileSize": "12.5 MB",
+          "language": "en"
+        }
+      ],
+      "software": [
+        {
+          "name": "Comet Building Studio",
+          "version": "4.0.0",
+          "description": {
+            "tr": "Bina otomasyon programlama ve izleme yazılımı",
+            "en": "Building automation programming and monitoring software"
+          },
+          "file": "/software/comet-building-studio-v4.0.zip",
+          "fileSize": "120 MB",
+          "platform": "Windows",
+          "releaseDate": "2025-10-01"
+        }
+      ],
+      "accessories": [
+        {
+          "productId": "prod_004",
+          "relationship": "required"
+        }
+      ],
+      "videos": [],
+      "tags": [
+        "controller",
+        "building",
+        "automation",
+        "bacnet",
+        "plc",
+        "hvac"
+      ],
+      "status": "active",
+      "price": {
+        "amount": 8500,
+        "currency": "USD"
+      }
+    },
+    {
+      "slug": "genesis",
+      "sku": "CC-RS-200",
+      "category": "hvac",
+      "subcategory": "",
+      "featured": true,
+      "name": {
+        "tr": "Genesis Sıcaklık Sensörü",
+        "en": ""
+      },
+      "shortDescription": {
+        "tr": "Yaptık gi",
+        "en": ""
+      },
+      "longDescription": {
+        "tr": "",
+        "en": ""
+      },
+      "images": [
+        {
+          "src": "/images/products/1771706159051-the-world-is-yours-wallpaper-ixpap.jpg",
+          "alt": {
+            "tr": "",
+            "en": ""
+          }
+        }
+      ],
+      "model3d": null,
+      "specifications": [],
+      "documents": [],
+      "software": [
+        {
+          "name": "",
+          "version": "",
+          "description": {
+            "tr": "",
+            "en": ""
+          },
+          "file": "",
+          "fileSize": "",
+          "platform": "Windows",
+          "releaseDate": "2026-02-21"
+        }
+      ],
+      "accessories": [],
+      "videos": [],
+      "tags": [],
+      "status": "active",
+      "price": {
+        "amount": 30,
+        "currency": "USD",
+        "discountedAmount": 24.95
+      },
+      "id": "prod_1771706173136"
+    }
+  ]
+}

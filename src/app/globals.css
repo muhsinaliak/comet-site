@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Outfit", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-brand-blue: #00389e;
+  --color-brand-blue-light: #0050d4;
+  --color-brand-blue-dark: #002a75;
+  --color-brand-green: #00f26f;
+  --color-brand-green-muted: #00c746;
+  --color-brand-charcoal: #282828;
+  --color-brand-charcoal-light: #3a3a3a;
+
+  --color-surface: #ffffff;
+  --color-surface-secondary: #f8f9fb;
+  --color-surface-tertiary: #f0f2f5;
+  --color-text-primary: #0a0f1c;
+  --color-text-secondary: #4a5568;
+  --color-text-tertiary: #8492a6;
+  --color-border: #e2e8f0;
+  --color-border-light: #f0f2f5;
+
+  --color-dark-surface: #0a0f1c;
+  --color-dark-surface-secondary: #111827;
+  --color-dark-surface-tertiary: #1a2236;
+  --color-dark-text-primary: #f0f2f5;
+  --color-dark-text-secondary: #94a3b8;
+  --color-dark-text-tertiary: #64748b;
+  --color-dark-border: #1e293b;
+  --color-dark-border-light: #253044;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-expo: cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  background-color: var(--color-dark-surface);
+  color: var(--color-dark-text-primary);
+}
+
+/* Heading typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Selection color */
+::selection {
+  background-color: #00f26f30;
+  color: var(--color-brand-blue);
+}
+
+.dark ::selection {
+  background-color: #00f26f40;
+  color: var(--color-brand-green);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-tertiary);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--color-dark-border);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dark-text-tertiary);
+}
+
+/* Grid pattern background */
+.bg-grid-pattern {
+  background-image:
+    linear-gradient(rgba(0, 56, 158, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 56, 158, 0.03) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.dark .bg-grid-pattern {
+  background-image:
+    linear-gradient(rgba(0, 242, 111, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 242, 111, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Noise texture overlay */
+.noise-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.015;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+.dark .noise-overlay::before {
+  opacity: 0.03;
+}
+
+/* Pixel scatter animation */
+@keyframes pixel-float {
+  0%, 100% { transform: translateY(0px) scale(1); opacity: 0.6; }
+  50% { transform: translateY(-8px) scale(1.2); opacity: 1; }
+}
+
+.pixel-dot {
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-brand-green);
+  position: absolute;
+  animation: pixel-float 3s ease-in-out infinite;
+}
+
+/* Glow effects */
+.glow-green {
+  box-shadow: 0 0 20px rgba(0, 242, 111, 0.15), 0 0 60px rgba(0, 242, 111, 0.05);
+}
+
+.dark .glow-green {
+  box-shadow: 0 0 20px rgba(0, 242, 111, 0.25), 0 0 60px rgba(0, 242, 111, 0.1);
+}
+
+.glow-blue {
+  box-shadow: 0 0 20px rgba(0, 56, 158, 0.15), 0 0 60px rgba(0, 56, 158, 0.05);
+}
+
+/* Gradient text */
+.text-gradient-brand {
+  background: linear-gradient(135deg, var(--color-brand-blue) 0%, var(--color-brand-green) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark .text-gradient-brand {
+  background: linear-gradient(135deg, var(--color-brand-green) 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+  background: rgba(10, 15, 28, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: transform 0.5s var(--ease-out-expo), box-shadow 0.5s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 40px -12px rgba(0, 0, 0, 0.08),
+    0 4px 12px -2px rgba(0, 0, 0, 0.04);
+}
+
+.dark .card-hover:hover {
+  box-shadow:
+    0 20px 40px -12px rgba(0, 0, 0, 0.4),
+    0 4px 12px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover fill */
+.btn-hover-fill {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn-hover-fill::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-brand-green);
+  transform: translateY(100%);
+  transition: transform 0.4s var(--ease-out-expo);
+  z-index: -1;
+}
+
+.btn-hover-fill:hover::before {
+  transform: translateY(0%);
+}
+
+/* Focus ring */
+*:focus-visible {
+  outline: 2px solid var(--color-brand-green);
+  outline-offset: 2px;
+}
+
+/* Smooth image rendering */
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Link underline animation */
+.link-underline {
+  position: relative;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--color-brand-green);
+  transition: width 0.3s var(--ease-out-expo);
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
