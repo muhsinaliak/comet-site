@@ -1,12 +1,9 @@
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
-import { getProductBySlug, getAllSlugs } from "@/lib/products";
+import { getProductBySlug } from "@/lib/products";
 import { ProductDetailClient } from "./product-detail-client";
 import type { Metadata } from "next";
 
-export async function generateStaticParams() {
-  return getAllSlugs().map((slug) => ({ slug }));
-}
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
