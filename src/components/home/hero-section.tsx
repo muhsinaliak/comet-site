@@ -90,7 +90,8 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-        <div className="max-w-2xl">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+        <div>
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
@@ -199,7 +200,7 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.4, ease }}
-          className="hidden lg:block absolute right-8 xl:right-20 top-1/2 -translate-y-1/2"
+          className="hidden lg:flex lg:justify-end"
         >
           <div className="relative w-80 h-[360px]">
             {/* Main device card */}
@@ -291,6 +292,7 @@ export function HeroSection() {
             </svg>
           </div>
         </motion.div>
+        </div>
       </div>
     </section>
   );

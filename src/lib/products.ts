@@ -1,29 +1,40 @@
-import productsData from "@/data/products.json";
+import fs from "fs";
+import path from "path";
 import type { Product, ProductCategory } from "@/types/product";
 
-const products = productsData.products as unknown as Product[];
+const DATA_PATH = path.join(process.cwd(), "src/data/products.json");
+
+function readProducts(): Product[] {
+  try {
+    const raw = fs.readFileSync(DATA_PATH, "utf-8");
+    const data = JSON.parse(raw);
+    return data.products as Product[];
+  } catch {
+    return [];
+  }
+}
 
 export function getAllProducts(): Product[] {
-  return products.filter((p) => p.status === "active");
+  return readProducts().filter((p) => p.status === "active");
 }
 
 export function getProductBySlug(slug: string): Product | undefined {
-  return products.find((p) => p.slug === slug);
+  return readProducts().find((p) => p.slug === slug);
 }
 
 export function getProductsByCategory(category: ProductCategory): Product[] {
-  return products.filter(
+  return readProducts().filter(
     (p) => p.category === category && p.status === "active"
   );
 }
 
 export function getFeaturedProducts(): Product[] {
-  return products.filter((p) => p.featured && p.status === "active");
+  return readProducts().filter((p) => p.featured && p.status === "active");
 }
 
 export function searchProducts(query: string, locale: "tr" | "en"): Product[] {
   const q = query.toLowerCase();
-  return products.filter(
+  return readProducts().filter(
     (p) =>
       p.status === "active" &&
       (p.name[locale].toLowerCase().includes(q) ||
@@ -34,6 +45,7 @@ export function searchProducts(query: string, locale: "tr" | "en"): Product[] {
 }
 
 export function getRelatedProducts(productId: string): Product[] {
+  const products = readProducts();
   const product = products.find((p) => p.id === productId);
   if (!product) return [];
   const accessoryIds = product.accessories.map((a) => a.productId);
@@ -43,9 +55,9 @@ export function getRelatedProducts(productId: string): Product[] {
 }
 
 export function getCategories(): ProductCategory[] {
-  return [...new Set(products.map((p) => p.category))];
+  return [...new Set(readProducts().map((p) => p.category))];
 }
 
 export function getAllSlugs(): string[] {
-  return products.map((p) => p.slug);
+  return readProducts().map((p) => p.slug);
 }
