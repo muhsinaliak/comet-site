@@ -26,6 +26,26 @@ const nextConfig: NextConfig = {
     ];
   },
   productionBrowserSourceMaps: false,
+  async rewrites() {
+    return [
+      {
+        source: "/documents/:path*",
+        destination: "/api/files/documents/:path*",
+      },
+      {
+        source: "/models/:path*",
+        destination: "/api/files/models/:path*",
+      },
+      {
+        source: "/images/products/:path*",
+        destination: "/api/files/images/products/:path*",
+      },
+      {
+        source: "/software/:path*",
+        destination: "/api/files/software/:path*",
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);
