@@ -6,6 +6,8 @@ import { ProductGrid } from "@/components/products/product-grid";
 import { PageHeader } from "@/components/shared/page-header";
 import type { Metadata } from "next";
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({
   params,
 }: {
